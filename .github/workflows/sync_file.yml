@@ -1,8 +1,8 @@
-name: Sync File Every 3 Hours
+name: Sync File Every 30 Minutes
 
 on:
   schedule:
-    - cron: "0 */3 * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
