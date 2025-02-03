@@ -1,1 +1,33 @@
-vmess://eyJhZGQiOiIxMDQuMTYuNjcuMzgiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImFxLmRhb3poYW5nLmxpbmsiLCJpZCI6ImY4YzkyYjNiLTU0NDctNDRhNS05ZTU0LTIzY2RjMjY5Y2I5MyIsIm5ldCI6IndzIiwicGF0aCI6ImY4YzkyYjNiIiwicG9ydCI6IjgwIiwicHMiOiLinYxb2b7Yp9uM2KfZhl/Yr9mI2LHZh1/Zhdi12LHZgV3inYwiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=
+{
+  "inbounds": [
+    {
+      "tag": "پایان دوره و نیاز به تمدید",
+      "port": 0,  // پورت 0 به معنای غیرفعال بودن اتصال
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "your-uuid-here",  // UUID خود را اینجا وارد کنید
+            "flow": "xtls-rprx-direct"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
