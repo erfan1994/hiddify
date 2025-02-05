@@ -1,3 +1,22 @@
+from datetime import datetime, timedelta
+
+# تاریخ فعلی
+now = datetime.now()
+
+# تاریخ ۳۱ روز بعد
+future_date = now + timedelta(days=31)
+
+# تفاوت بین تاریخ آینده و تاریخ فعلی
+time_left = future_date - now
+
+# تبدیل تفاوت به روز، ساعت، دقیقه و ثانیه
+days_left = time_left.days
+hours_left = time_left.seconds // 3600
+minutes_left = (time_left.seconds % 3600) // 60
+seconds_left = time_left.seconds % 60
+
+# نمایش نتیجه
+print(f"زمان باقی‌مانده: {days_left} روز، {hours_left} ساعت، {minutes_left} دقیقه و {seconds_left} ثانیه")
 ss://bm9uZTpjYWJhYmNhLWFhYmMtY2FiYS1iZGFjLWNiYmJjY2FhYWNhYg==@127.0.0.1:1080#[Behnam_AJB_city]
 ss://bm9uZTphY2FhY2JiLWFjYWItYmNhYS1iY2FkLWFiYmJjY2FhYmNhYw==@127.0.0.1:2080#[Behnam_AJB_city]
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@51.77.53.200:2375#[Behnam_AJB_city]
